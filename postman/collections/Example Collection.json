@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "71a6f902-3562-4535-9a1d-281cd102c5c0",
+		"name": "Example Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "29145162-71a6f902-3562-4535-9a1d-281cd102c5c0"
+	},
+	"item": [
+		{
+			"name": "Simple GET Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "419c7193-d550-47a7-a0fe-955f77297abf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ae69a5b4-d779-4a88-8844-f2605cde94fd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
